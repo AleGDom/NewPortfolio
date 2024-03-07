@@ -1,0 +1,48 @@
+---
+import Section from "../Section.astro";
+import Subtitle from "../Subtitle.astro";
+import Title from '../Title.astro';
+import Card from "../Card.astro";
+import Graduation from '../icons/Graduation.astro';
+import Logo from '../icons/logo.astro';
+
+---
+
+<Section id="aboutme">
+    <Subtitle>Para conocerme más</Subtitle>
+    <Title>Sobre mí</Title>
+
+    <div class="about" >
+        <div class="flex items-center">
+            <img src="perfil.jpg" alt="" class="w-[40rem]  rounded-[50%] mx-auto" >
+        </div>
+       
+            
+        <div class="about__description text-xl  leading-normal  py-5 px-5  "> 
+                <p class="">"Hola, soy Alexis. Tengo 25 años, soy un programador de México. Desde que estaba en el bachillerato, me dediqué al estudio de la programación, pero mi pasión por la tecnología se remonta a muchos años atrás. Me destaco por mi habilidad para crear diseños únicos y optimizar al máximo mis proyectos.</p>
+                
+                <p>Me apasiona la programación 💻, soy entusiasta de la Ciberseguridad 🔐, me considero Fullstack pero prefiero el Backend. </p>
+            </div>
+    </div>
+</Section>
+    <style>
+        .about{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 3rem;
+	    }
+
+    
+    .about__description p{
+        margin-bottom: 3rem;
+        font-size: 2rem;
+        font-weight: 500;
+    }
+
+        .card{
+		background-color: #1f2328;
+		color: white;
+	}
+    </style>
+
+    

@@ -1,0 +1,66 @@
+---
+import Section from "../Section.astro"
+import Subtitle from "../Subtitle.astro"
+import Title from "../Title.astro"
+import AstroIcon from "../icons/AstroIconColor.astro"
+import Css from "../icons/CssColor.astro"
+import Html from "../icons/HtmlColor.astro"
+import Javascript from "../icons/JavascriptColor.astro"
+import Php from "../icons/PhpColor.astro"
+import React from "../icons/ReactColor.astro"
+import Tailwind from "../icons/TailwindColor.astro"
+import Timeline from "./Timeline.astro"
+import Mysql from '../icons/MysqlColor.astro';
+import Git from '../icons/GitColor.astro';
+import Wordpress from '../icons/WordpressColor.astro'
+
+
+---
+<Section id="experience">
+    <Subtitle>Explora mi</Subtitle>
+    <Title>Experiencia</Title>
+
+    <div class="lg:grid lg:grid-cols-2 gap-28">
+        <div class="flex justify-between">
+            <div class="px-10 md:px-0">
+                <Timeline/>
+            </div>
+            
+        </div>
+        <div class="px-20">
+            <div class="bg-[#000c] md:max-w-[50rem] text-white flex justify-between px-4">
+                <p class="text-white ">📁C:\Users\alexis</p>
+
+                <div class="flex gap-5 items-end">
+                    <div class="cursor-pointer">
+                        __
+                    </div>
+                    <div class="leading-none cursor-pointer">
+                        X
+                    </div>
+                </div>
+            </div>
+            <div class="card  bg-[#1f2328] text-white md:max-w-[50rem] py-8">
+                <h3 class="text-center text-5xl mb-16 font-semibold">Experencia en Tecnologías:</h3>
+                <div class="flex justify-center gap-56 md:gap-28">
+                    <div class="text-left">
+                        
+                        <p class="text-4xl font-semibold mb-8"> <Javascript class="w-[2rem] h-[2rem] inline  "/> Javascript</p>
+                        <p class="text-4xl font-semibold mb-8"> <Html class="w-[2rem] h-[2rem] inline "/> HTML</p>
+                        <p class="text-4xl font-semibold mb-8"> <Css class="w-[2rem] h-[2rem] inline "/> CSS</p>
+                        <p class="text-4xl font-semibold mb-8"> <AstroIcon class="w-[2rem] h-[2rem] inline "/> Astro</p>
+                        <p class="text-4xl font-semibold mb-8"> <Tailwind class="w-[2rem] h-[2rem] inline "/> Tailwind</p>	
+                    </div>
+                    <div class="text-right">
+                        <p class="text-4xl font-semibold mb-8"> Php <Php class="w-[2rem] h-[2rem] inline  "/></p>
+                        <p class="text-4xl font-semibold mb-8"> React <React class="w-[2rem] h-[2rem] inline  "/></p>
+                        <p class="text-4xl font-semibold mb-8"> MySQL <Mysql class="w-[2rem] h-[2rem] inline  "/></p>
+                        <p class="text-4xl font-semibold mb-8"> Git <Git class="w-[2rem] h-[2rem] inline  "/></p>
+                        <p class="text-4xl font-semibold mb-8"> Wordpress <Wordpress class="w-[2rem] h-[2rem] inline  "/></p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</Section>

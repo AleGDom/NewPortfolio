@@ -1,0 +1,41 @@
+---
+import TimelineItem from "./TimelineItem.astro";
+const EXPERIENCE =[
+    {
+        title: 'Desarrollador web Freelance',
+        description: 'Especializado en soluciones de desarrollo web. Utilicé Php y Laravel para crear soluciones dinamicas y escalables, integrando React js para interfaces estéticas y agradables junto con Mysql para una optimizada gestión de base de datos.',
+        date: 'Actualmente'
+    },
+    {
+        title: 'Ayudante de soporte técnico',
+        description: `Brindé soporte a usuarios internos, resolviendo problemas relacionados con problemas de hardware, software y redes. 
+        Colaboré con tareas de gestión de base de datos, realizando mantenimiento y actualizaciones según las necesidades del departamento de TI.`,
+        date: '04/20/20'
+    },
+    {
+        title: 'Desarrollador de Plugins y temas para Wordpress',
+        description: 'Desarrollé temas y plugins para uso interno, el cual fue de ayuda para realizar proyectos con empresas aliadas y clientes en menor tiempo además de optimizar en costos de producción al desarrollar nuestras propias herramientas. ',
+        date: '01/06/2017'
+    },
+
+]
+---
+
+<h3 class="mb-6 ml-3 text-5xl font-bold text-neutral-700 ">
+  Empleos
+</h3>
+
+<ol class="border-l-2 border-info-100">
+  <!--First item-->
+  {
+    EXPERIENCE.map((e)=>(
+        <li>
+            <TimelineItem title={e.title} description={e.description} date={e.date} />
+        </li>
+        
+    ))
+  }
+
+ 
+  
+</ol>

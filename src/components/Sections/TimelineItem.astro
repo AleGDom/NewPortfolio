@@ -1,0 +1,49 @@
+---
+interface Props {
+	title: string;
+    description: string;
+    date: string;
+}
+
+const {title,description,date}= Astro.props;
+---
+
+
+    <div class="flex-start md:flex ">
+      <div
+        class="-ml-[13px] flex h-[25px] w-[25px] items-center justify-center rounded-full bg-info-100 text-info-700 hover:bg-gray-100">
+        <svg 
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          class="h-[3rem] w-[3rem]">
+          <path
+            fill-rule="evenodd"
+            d="M6.75 2.25A.75.75 0 017.5 3v1.5h9V3A.75.75 0 0118 3v1.5h.75a3 3 0 013 3v11.25a3 3 0 01-3 3H5.25a3 3 0 01-3-3V7.5a3 3 0 013-3H6V3a.75.75 0 01.75-.75zm13.5 9a1.5 1.5 0 00-1.5-1.5H5.25a1.5 1.5 0 00-1.5 1.5v7.5a1.5 1.5 0 001.5 1.5h13.5a1.5 1.5 0 001.5-1.5v-7.5z"
+            clip-rule="evenodd" />
+        </svg>
+      </div>
+      <div
+        class="mb-16 ml-6 block max-w-full rounded-lg bg-neutral-50 p-6 shadow-md shadow-black/5 hover:bg-gray-100 transition hover:scale-105 ease duration-500 ">
+        <div class="mb-4 flex justify-between">
+            <p class="text-4xl font-semibold transition duration-150 ease-in-out hover:text-info-600 focus:text-info-600 active:text-info-700"> 
+                {title}
+            </p>
+          <p
+            
+            class="text-3xl  transition duration-150 ease-in-out hover:text-info-600 focus:text-info-600 active:text-info-700"
+            >{date}</p
+          >
+        </div>
+        <p class="mb-6 text-neutral-700 description">
+          {description}
+        </p>
+        
+      </div>
+    </div>
+
+    <style>
+      .description{
+        font-size: 2rem;
+      }
+    </style>

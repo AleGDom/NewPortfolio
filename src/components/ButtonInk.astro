@@ -1,0 +1,74 @@
+
+    <div class="button-container">
+      <span class="mask">Descargar CV</span>
+      <button type="button" name="Hover">Descargar CV</button>
+    </div>
+
+
+<style>
+    .button-container {
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s;
+ 
+}
+
+.button-container button {
+  
+  
+  background: #fff;
+  -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+  mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+  -webkit-mask-size: 2300% 100%;
+  mask-size: 2300% 100%;
+  border: none;
+  color: #1f2328;;
+  cursor: pointer;
+  animation: anim2 0.7s steps(22) forwards;
+  font-weight: bold;
+  padding: 1rem .5rem;
+  text-align: center;
+  font-size: 2rem;
+  
+
+
+}
+
+.button-container button:hover {
+  animation: anim1 0.7s steps(22) forwards;
+}
+
+.mask {
+    
+  position: absolute;
+  color: #fff;
+  text-align: center;
+  display: block;
+  font-weight: bold;
+  font-size: 2rem;
+  overflow: hidden;
+  padding: 1rem .5rem;
+}
+
+@keyframes anim1 {
+  from {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+  to {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+
+@keyframes anim2 {
+  from {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+  to {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+}
+</style>

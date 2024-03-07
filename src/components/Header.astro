@@ -1,0 +1,46 @@
+---
+import LogoIcon from "../components/icons/logo.astro";
+
+import ButtonInk from "./ButtonInk.astro";
+
+---
+<header class="w-full bg-[#24292f] ">
+    <div class="bg">
+
+    
+    <div class="w-[90%] max-w-[120rem] mx-auto flex justify-between">
+        <a href="/" class="flex gap-x-2 items-center text-5xl title font-bold text-white logo">
+           
+            <LogoIcon class="size-12" />
+            A. Dev
+        </a>
+        <nav class="flex nav gap-x-[3rem] items-center nav">
+            <a href="/">Inicio</a>
+            <a href="#aboutme">Sobre mi</a>
+            <a href="#experience">Experiencia</a>
+            <a href="#projects">Proyectos</a>
+            
+        </nav>
+
+        <ButtonInk/>
+
+    </div>
+    </div>
+</header>
+
+<style>
+
+.nav a{
+		font-size: 2rem;
+		position: relative;
+		font-weight: 400;
+		color: #fff;
+        border: 2px solid transparent ;
+				
+	}
+.nav a:hover{
+    border: 2px solid #D93636 ;
+}
+
+	
+</style>

@@ -1,0 +1,36 @@
+---
+import SocialPeel from '../SocialPeel.astro';
+/**ICONS */
+import LinkedinIcon from '../icons/Linkedin.astro';
+import GithubIcon from '../icons/Github.astro';
+import Section from '../Section.astro';
+
+---
+<Section>
+<div class="pt-[5rem] lg:flex  justify-around ">
+    <!-- <p class="text-[3rem] ">Hola, soy</p> -->
+    <div class="text-center md:text-left mb-20">
+        <h1 class=" text-[18rem] lg:text-[23rem] font-bold name mx-auto leading-none md:flex"><span class="bg-[#D93636] inline-block md:h-[22rem] h-[25rem]">A</span>lexis</h1>
+        <h2 class=" text-[18rem] md:text-[23rem] font-bold name mx-auto leading-none ">Cruz<span class="text-[#D93636]">.</span></h2>
+    </div>
+
+    <div class="flex flex-col justify-end mb-[3rem] items-center">
+        <div class="flex items-end gap-12">
+            <SocialPeel href="https://www.linkedin.com/in/alexis-dominguez-gpe" >
+                <LinkedinIcon class="w-[15rem] h-auto " />
+            </SocialPeel>
+            <SocialPeel href="https://github.com/AleGDom" >
+                <GithubIcon class="w-[7rem] h-[7rem]" />
+            </SocialPeel>	
+        </div>
+        <h2 class="text-[4.8rem] title leading-tight font-semibold  px-4  mt-[4rem] mb-[-3rem] text-center">Desarrollador Fullstack Jr</h2>
+        
+        
+    </div>
+</div>
+</Section>
+<style>
+    .name{
+        font-family: 'Neue Haas Grotesk Text Pro';
+    }
+</style>
